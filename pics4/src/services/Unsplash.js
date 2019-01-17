@@ -1,0 +1,10 @@
+import axios from "axios";
+
+const YOUR_ACCESS_KEY = `e594021dd7a83d7f511cc737081a7c71f305fc3494e7368c401047898a422a77`;
+export const Unsplash = axios.create({
+  baseURL: `https://api.unsplash.com/`,
+  headers: {
+    "Accept-Version": "v1",
+    Authorization: `Client-ID ${YOUR_ACCESS_KEY}`
+  }
+});
