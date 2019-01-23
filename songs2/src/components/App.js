@@ -5,10 +5,10 @@ import SongDetail from "./SongDetail";
 export const App = () => {
   return (
     <div className="ui grid">
-      <div className="four wide column">
+      <div className="ten wide column">
         <SongList />
       </div>
-      <div className="four wide column">
+      <div className="six wide column">
         <SongDetail />
       </div>
     </div>
