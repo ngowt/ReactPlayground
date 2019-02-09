@@ -39,7 +39,7 @@ class GoogleAuth extends React.Component {
   };
 
   renderButton = () => {
-    const { isSignedIn } = this.props.auth;
+    const { isSignedIn } = this.props;
     const className = isSignedIn ? "ui button primary" : "ui button negative";
     const handler = isSignedIn ? this.signOutHandler : this.signInHandler;
     const text = isSignedIn ? "Sign Out" : "Sign In";
@@ -59,7 +59,7 @@ class GoogleAuth extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  return { auth: state.auth };
+  return { isSignedIn: state.auth.isSignedIn };
 };
 
 export default connect(
