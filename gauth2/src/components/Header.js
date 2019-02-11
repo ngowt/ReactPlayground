@@ -3,8 +3,10 @@ import GAuth from "./GAuth";
 
 export const Header = () => {
   return (
-    <h2 className="ui icon header">
-      <GAuth />
-    </h2>
+    <div className="ui block header">
+      <h2 className="ui center aligned icon header">
+        <GAuth />
+      </h2>
+    </div>
   );
 };

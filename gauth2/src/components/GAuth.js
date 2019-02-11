@@ -45,14 +45,16 @@ class GAuth extends React.Component {
     const text = isSignedIn ? "Sign Out" : "Sign In";
     return (
       <button className={className} onClick={handler}>
-        <i className="circular users icon" />
-        {text}
+        <div className="content">
+          <i className="google plus icon" />
+          {text}
+        </div>
       </button>
     );
   };
 
   render = () => {
-    return <div className="content">{this.renderAuthButton()}</div>;
+    return <div>{this.renderAuthButton()}</div>;
   };
 }
 
