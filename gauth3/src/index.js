@@ -14,12 +14,3 @@ ReactDOM.render(
   </Provider>,
   document.querySelector("#root")
 );
-
-/*
-    1. Create header component
-    2. Create action creators
-    3. Create reducers
-    4. Create google auth component
-    5. Get redux chrome debugging to work
-    6. Create store
-*/
